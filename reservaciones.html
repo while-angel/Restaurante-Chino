@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Reservaciones · Jardín de Jade</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;900&family=Figtree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <a class="logo" href="index.html">玉園 Jardín de Jade</a>
+        <div class="links">
+          <a href="index.html">Inicio</a><a href="menu.html">Menú</a
+          ><a href="nosotros.html">Nosotros</a><a href="galeria.html">Galería</a
+          ><a href="ubicacion.html">Ubicación</a
+          ><a href="reservaciones.html" class="on" aria-current="page"
+            >Reservaciones</a
+          >
+        </div>
+      </nav>
+      <div class="lanterns" aria-hidden="true">
+        <div class="lantern l1">
+          <i></i>
+          <div class="b"></div>
+          <div class="t"></div>
+        </div>
+        <div class="lantern l2">
+          <i></i>
+          <div class="b"></div>
+          <div class="t"></div>
+        </div>
+        <div class="lantern l3">
+          <i></i>
+          <div class="b"></div>
+          <div class="t"></div>
+        </div>
+        <div class="lantern l4">
+          <i></i>
+          <div class="b"></div>
+          <div class="t"></div>
+        </div>
+      </div>
+      <div class="hero-in">
+        <h1><span>Reserva</span> <span>tu</span> <span>mesa</span></h1>
+        <p class="sub">Elige día y hora. Te confirmamos por teléfono.</p>
+      </div>
+    </header>
+    <main>
+      <section class="s" style="max-width: 760px">
+        <form class="form" id="rsv" novalidate>
+          <label>Nombre<input name="nombre" autocomplete="name" /></label
+          ><label
+            >Teléfono<input name="tel" type="tel" autocomplete="tel"
+          /></label>
+          <label>Fecha<input name="fecha" type="date" /></label>
+          <label
+            >Hora<select name="hora">
+              <option>12:00</option>
+              <option>13:00</option>
+              <option>14:00</option>
+              <option>18:00</option>
+              <option>19:00</option>
+              <option>20:00</option>
+              <option>21:00</option>
+            </select></label
+          >
+          <label
+            >Personas<select name="personas">
+              <option>2 personas</option>
+              <option>3 personas</option>
+              <option>4 personas</option>
+              <option>6 personas</option>
+              <option>8 o más</option>
+            </select></label
+          >
+          <label
+            >Ocasión<select name="oc">
+              <option>Cena normal</option>
+              <option>Cumpleaños</option>
+              <option>Aniversario</option>
+              <option>Reunión de trabajo</option>
+            </select></label
+          >
+          <label class="full"
+            >Notas<textarea
+              name="notas"
+              rows="3"
+              placeholder="Alergias, silla para bebé…"
+            ></textarea>
+          </label>
+          <div class="full">
+            <button class="btn red" type="submit">Reservar</button>
+            <div class="err" id="err" role="alert"></div>
+          </div>
+        </form>
+        <div class="ticket" id="ticket" role="status"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="fi">
+        <div>
+          <h4>玉園 Jardín de Jade</h4>
+          <p>Cocina cantonesa y de Sichuan, hecha al momento.</p>
+        </div>
+        <div>
+          <h4>Páginas</h4>
+          <a href="index.html">Inicio</a><a href="menu.html">Menú</a
+          ><a href="nosotros.html">Nosotros</a><a href="galeria.html">Galería</a
+          ><a href="ubicacion.html">Ubicación</a
+          ><a href="reservaciones.html">Reservaciones</a>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <p>
+            Calle del Dragón 123<br />Tel. 555-0123<br />hola@jardindejade.example
+          </p>
+        </div>
+      </div>
+      <p class="copy">© 2026 Jardín de Jade · 歡迎光臨</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>

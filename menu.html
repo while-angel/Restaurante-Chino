@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Menú · Jardín de Jade</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@500;900&family=Figtree:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav">
+        <a class="logo" href="index.html">玉園 Jardín de Jade</a>
+        <div class="links">
+          <a href="index.html">Inicio</a
+          ><a href="menu.html" class="on" aria-current="page">Menú</a
+          ><a href="nosotros.html">Nosotros</a><a href="galeria.html">Galería</a
+          ><a href="ubicacion.html">Ubicación</a
+          ><a href="reservaciones.html">Reservaciones</a>
+        </div>
+      </nav>
+      <div class="lanterns" aria-hidden="true">
+        <div class="lantern l1">
+          <i></i>
+          <div class="b"></div>
+          <div class="t"></div>
+        </div>
+        <div class="lantern l2">
+          <i></i>
+          <div class="b"></div>
+          <div class="t"></div>
+        </div>
+        <div class="lantern l3">
+          <i></i>
+          <div class="b"></div>
+          <div class="t"></div>
+        </div>
+        <div class="lantern l4">
+          <i></i>
+          <div class="b"></div>
+          <div class="t"></div>
+        </div>
+      </div>
+      <div class="hero-in">
+        <h1><span>Nuestro</span> <span>menú</span></h1>
+        <p class="sub">Cada plato se prepara al pedirlo.</p>
+      </div>
+    </header>
+    <main>
+      <section class="s">
+        <div class="tabs" role="tablist" aria-label="Categorías">
+          <button
+            class="tab"
+            role="tab"
+            aria-selected="true"
+            aria-controls="p0"
+          >
+            Dim sum</button
+          ><button
+            class="tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="p1"
+          >
+            Wok</button
+          ><button
+            class="tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="p2"
+          >
+            Fideos y arroz</button
+          ><button
+            class="tab"
+            role="tab"
+            aria-selected="false"
+            aria-controls="p3"
+          >
+            Postres
+          </button>
+        </div>
+        <div class="panel on" id="p0" role="tabpanel">
+          <div class="dish">
+            <h3>Har gow<span class="zh">蝦餃</span></h3>
+            <span class="pr">$6.50</span>
+            <p>Empanadillas de camarón al vapor.</p>
+          </div>
+          <div class="dish">
+            <h3>Siu mai<span class="zh">燒賣</span></h3>
+            <span class="pr">$6.00</span>
+            <p>Cerdo y hongo shiitake.</p>
+          </div>
+          <div class="dish">
+            <h3>Bao de cerdo asado<span class="zh">叉燒包</span></h3>
+            <span class="pr">$5.50</span>
+            <p>Pan suave relleno de char siu.</p>
+          </div>
+          <div class="dish">
+            <h3>Rollitos primavera<span class="zh">春卷</span></h3>
+            <span class="pr">$4.50</span>
+            <p>Crujientes, con salsa agridulce.</p>
+          </div>
+          <div class="dish">
+            <h3>Gyoza a la plancha<span class="zh">鍋貼</span></h3>
+            <span class="pr">$6.00</span>
+            <p>Con vinagre negro y jengibre.</p>
+          </div>
+        </div>
+        <div class="panel" id="p1" role="tabpanel" hidden>
+          <div class="dish">
+            <h3>Pollo Kung Pao<span class="zh">宮保雞丁</span></h3>
+            <span class="pr">$11.00</span>
+            <p>Maní tostado y chile de Sichuan.</p>
+          </div>
+          <div class="dish">
+            <h3>Res con brócoli<span class="zh">芥蘭牛肉</span></h3>
+            <span class="pr">$12.50</span>
+            <p>Salsa de ostión a fuego alto.</p>
+          </div>
+          <div class="dish">
+            <h3>Cerdo agridulce<span class="zh">咕嚕肉</span></h3>
+            <span class="pr">$10.50</span>
+            <p>Piña, pimiento y salsa brillante.</p>
+          </div>
+          <div class="dish">
+            <h3>Tofu Mapo<span class="zh">麻婆豆腐</span></h3>
+            <span class="pr">$9.50</span>
+            <p>Picante que adormece los labios.</p>
+          </div>
+          <div class="dish">
+            <h3>Pato laqueado<span class="zh">北京烤鴨</span></h3>
+            <span class="pr">$26.00</span>
+            <p>Piel crujiente y panqueques finos.</p>
+          </div>
+        </div>
+        <div class="panel" id="p2" role="tabpanel" hidden>
+          <div class="dish">
+            <h3>Chow mein<span class="zh">炒麵</span></h3>
+            <span class="pr">$9.00</span>
+            <p>Fideos salteados con verduras.</p>
+          </div>
+          <div class="dish">
+            <h3>Dan dan<span class="zh">擔擔麵</span></h3>
+            <span class="pr">$9.50</span>
+            <p>Cerdo, sésamo y aceite de chile.</p>
+          </div>
+          <div class="dish">
+            <h3>Arroz frito Yangzhou<span class="zh">揚州炒飯</span></h3>
+            <span class="pr">$8.50</span>
+            <p>Camarón, jamón y huevo.</p>
+          </div>
+          <div class="dish">
+            <h3>Sopa wonton<span class="zh">雲吞湯</span></h3>
+            <span class="pr">$7.00</span>
+            <p>Caldo claro con empanadillas.</p>
+          </div>
+        </div>
+        <div class="panel" id="p3" role="tabpanel" hidden>
+          <div class="dish">
+            <h3>Bolitas de sésamo<span class="zh">煎堆</span></h3>
+            <span class="pr">$4.50</span>
+            <p>Rellenas de frijol dulce.</p>
+          </div>
+          <div class="dish">
+            <h3>Tarta de huevo<span class="zh">蛋撻</span></h3>
+            <span class="pr">$3.50</span>
+            <p>Masa hojaldrada con crema tibia.</p>
+          </div>
+          <div class="dish">
+            <h3>Tangyuan<span class="zh">湯圓</span></h3>
+            <span class="pr">$5.00</span>
+            <p>Arroz glutinoso en jarabe de jengibre.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="fi">
+        <div>
+          <h4>玉園 Jardín de Jade</h4>
+          <p>Cocina cantonesa y de Sichuan, hecha al momento.</p>
+        </div>
+        <div>
+          <h4>Páginas</h4>
+          <a href="index.html">Inicio</a><a href="menu.html">Menú</a
+          ><a href="nosotros.html">Nosotros</a><a href="galeria.html">Galería</a
+          ><a href="ubicacion.html">Ubicación</a
+          ><a href="reservaciones.html">Reservaciones</a>
+        </div>
+        <div>
+          <h4>Contacto</h4>
+          <p>
+            Calle del Dragón 123<br />Tel. 555-0123<br />hola@jardindejade.example
+          </p>
+        </div>
+      </div>
+      <p class="copy">© 2026 Jardín de Jade · 歡迎光臨</p>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
